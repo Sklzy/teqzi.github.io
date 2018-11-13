@@ -1,0 +1,137 @@
+<html>
+  
+<!-- Mirrored from itsfiremonkey.github.io/cubedown.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Nov 2018 22:13:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <title>Sklzy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- Meta Data -->
+    <meta name="theme-color" content="#98ff98">
+    <meta content="https://i.imgur.com/VH7Ieuf.png" property="og:image" />
+    <link rel="icon" type="image/x-icon" href="assets/images/Countdown.gif">
+    <meta content="Cube Countdown" property="og:title" />
+
+    <meta content="Sud4nym's countdown website for the Fortnite Cube event!" property="og:description" />
+    <meta content="Sud4nym's countdown website for the Fortnite Cube event!" name="description" />
+
+    <!-- CSS -->
+    <link href="assets/css/modesta.css" type="text/css" rel="stylesheet"> <!-- uses ModestaCSS from https://github.com/AlexFlipnote/ModestaCSS -->
+
+    <!-- JavaScript -->
+    <script src="assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+function wait(ms) {
+    var d = new Date();
+    var d2 = null;
+    do { d2 = new Date(); }
+    while(d2-d < ms);
+}
+ 
+// Set the date we're counting down to
+ 
+var countDownDate = new Date("Sep 19, 2018 08:36:43 EDT")
+ 
+// Get todays date and time
+var now = new Date().getTime();
+      
+var minutes = 27
+var seconds = 42
+   
+// Find the distance between now and the count down date
+var distance = countDownDate.getTime() - now;
+while (distance < 0) {
+    countDownDate.setSeconds(countDownDate.getSeconds() + minutes*60+seconds)
+    console.log("TEST")
+ 
+    distance = countDownDate - now;
+}
+ 
+// Update the count down every 1 second
+var x = setInterval(function() {
+ 
+    // Get todays date and time
+    var now = new Date().getTime();
+   
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+   
+    // Time calculations for days, hours, minutes and seconds
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = hours + "h "
+    + minutes + "m " + seconds + "s ";
+ 
+    console.log(distance)
+ 
+    if (distance < 0) {
+    document.getElementById("countdown").innerHTML = "The Cube Has Moved!";
+    }
+    if (distance < -19000) {
+    console.log("CUBE TIME")
+    countDownDate.setSeconds(countDownDate.getSeconds() + minutes*60+seconds)
+    var distance = countDownDate - now;
+    }
+}, 1000);
+</script>
+
+    <!-- Custom CSS -->
+    <style>.one-full.column p, .one-full.column h1 { margin: 0; }</style>
+  </head>
+  <body>
+    <div class="fullscreen">
+      <div class="background" style="background-image: url('assets/images/bg1.gif');"></div>
+      <script type="text/javascript">
+    var images = ['assets/images/down1.gif', 'assets/images/down2.gif', 'assets/images/down3.gif', 'assets/images/down4.gif', 'assets/images/down5.gif', 'assets/images/down6.gif', 'assets/images/down7.gif'];
+    document.getElementsByClassName('background')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+  </script>
+      <div class="center-object">
+        <section class="me">
+          <h1 class="title" style="width: 100%;text-align: center">Sklzy - Developer & Gamer</h1>
+          <span class="undertitle" style="width: 100%;text-align: center">This website/page is created by me @Sklzy. I will be creating a sick website soon. Just need time to think what to make. Check out my youtube channel and twitter below. Peace <3</span>
+        </section>
+        <div class="buttons">
+          <a href="https://twitter.com/Expolia" class="btn animation twitter hover" target="_blank">@Expolia</a>
+          <a href="https://www.youtube.com/channel/UC31vOimSJ1Wvt2c-Eo1riNQ" class="btn animation youtube hover">My YouTube</a>
+          <a href="https://twitter.com/Expolia" class="btn animation twitter hover" target="_blank">@Expolia</a>
+        </div>
+      </div>
+              <a href="#information"><div id="fade" class="arrow bounce"></div></a>
+    </div>
+
+    <section class="container" id="information">
+      <div class="box-container primary row">
+        <div class="one-full column"><h1 style="width: 100%;text-align: center"><i class="twa twa-pencil2"></i>Who am I?</h1></div>
+        <div class="one-full column">
+          <p>I'm a 15 year old oddball from Wales, UK. My name is Ethan Jones. I love computing and coding, even though i'm not the best at both, I still try. 
+          </p>
+        </div>
+      </div>
+      
+          <section class="container" id="information">
+      <div class="box-container primary row">
+        <div class="one-full column"><h1 style="width: 100%;text-align: center"><i class="twa twa-pencil2"></i>PLACEHOLDER</h1></div>
+        <div class="one-full column">
+<p>-</p>
+<p>-</p>
+<p>-</p>
+        </div>
+      </div>
+  
+        <div class="box-container primary row">
+        <div class="one-full column"><h1 style="width: 100%;text-align: center"><i class="twa twa-pencil2"></i>-</h1></div>
+        <div class="one-full column">
+        </div>
+      </div>
+
+  </section>
+  </body>
+
+<!-- Mirrored from itsfiremonkey.github.io/cubedown.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Nov 2018 22:13:42 GMT -->
+</html>
